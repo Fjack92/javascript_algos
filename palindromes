@@ -1,0 +1,19 @@
+
+function palindrome(str) {
+
+  var strRinsed = str.replace(/[^a-zA-Z0-9]/g, ''); //rinses our str of all non-alpha-nu characters, and stores it in a variable called strRinsed
+  var strLowered = strRinsed.toLowerCase();         //lowers the case of our strRinsed variable    
+  var loweredStrArr = strLowered.split('');         //splits the letters of the string into an array, so that we can reverse it using .split
+  var arrRev = loweredStrArr.reverse();             //Reverses the letters in the array 
+  var strRev = arrRev.join('');                     //joins the reversed letters back into a string
+
+  
+  if(strRev == strLowered){                         //compares the reversed string to strLowered to see if theyre the same, if they are it returns true, otherwise false       
+    console.log("true");
+  }
+  else 
+    console.log("false");
+
+}
+    
+palindrome("_Ey e");
