@@ -1,0 +1,10 @@
+
+function reverseString(str) {
+  var strArr = str.split(""); //This line splits the letters of the string into an array
+  var arrRev = strArr.reverse(); //This line reverses the letters of the string
+  var arrJoin = arrRev.join(""); //This line joins the reversed letters back together
+  console.log(arrJoin);
+  
+}
+
+reverseString("Hi, my name is Fred");
